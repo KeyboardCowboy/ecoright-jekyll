@@ -1,0 +1,617 @@
+/*@mixin text-shadow($h, $v, $b, $color) {
+  text-shadow: $h $v $b $color;
+  filter: dropshadow(color=$color, offx=$h, offy=$v);
+}*/
+/*
+ *
+.||..||..||..||..||..||..||..||..||..||..||..||..||..||..||..||..||..||..||.
+
+    .                                      '||            .           
+  .||.  .... ... ... ...    ....  ... ...   ||   ....   .||.    ....  
+   ||    '|.  |   ||'  || .|...||  ||'  ||  ||  '' .||   ||   .|...|| 
+   ||     '|.|    ||    | ||       ||    |  ||  .|' ||   ||   ||      
+   '|.'    '|     ||...'   '|...'  ||...'  .||. '|..'|'  '|.'  '|...' 
+        .. |      ||               ||                                 
+         ''      ''''             ''''      A Typographic Starter Kit            
+  
+  URL ........... http://typeplate.com
+  VERSION ....... 1.1.0
+  Github ........ https://github.com/typeplate/typeplate.github.io
+  AUTHORS ....... Dennis Gaebel (@gryghostvisuals) & Zachary Kain (@zakkain)
+  LICENSE ....... Creative Commmons Attribution 3.0
+  LICENSE URL ... http://creativecommons.org/licenses/by/3.0
+
+ .||..||..||..||..||..||..||..||..||..||..||..||..||..||..||..||..||..||..||.
+ *
+ */
+@font-face {
+  font-family: "Ampersand";
+  src: local("Georgia"), local("Garamond"), local("Palatino"), local("Book Antiqua");
+  unicode-range: U+0026;
+}
+
+@font-face {
+  font-family: "Ampersand";
+  src: local("Georgia");
+  unicode-range: U+270C;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/eri\/_source\/scss\/orion\/styles\/_typeplate\.scss}line{font-family:\00003400}}
+body {
+  word-wrap: break-word;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/eri\/_source\/scss\/orion\/styles\/_typeplate\.scss}line{font-family:\00003404}}
+pre code {
+  word-wrap: normal;
+}
+
+/**
+ * Dropcap Sass @include
+ * Use the following Sass @include with any selector you feel necessary.
+ *
+	@include dropcap($dropcap-float-position, $dropcap-font-size, $dropcap-font-family, $dropcap-txt-indent, $dropcap-margin, $dropcap-padding, $dropcap-color, $dropcap-line-height, $dropcap-bg);
+ *
+ * Extend this object into your custom stylesheet. Let the variables do the work.
+ *
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/eri\/_source\/scss\/orion\/styles\/_typeplate\.scss}line{font-family:\00003529}}
+html {
+  font: normal 100%/1.65 serif;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/eri\/_source\/scss\/orion\/styles\/_typeplate\.scss}line{font-family:\00003533}}
+body {
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  -o-hyphens: auto;
+  hyphens: auto;
+  color: #444444;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/eri\/_source\/scss\/orion\/styles\/_typeplate\.scss}line{font-family:\00003544}}
+small {
+  font-size: 65%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/eri\/_source\/scss\/orion\/styles\/_typeplate\.scss}line{font-family:\00003567}}
+h1, h2, h3, h4, h5, h6 {
+  text-rendering: optimizeLegibility;
+  line-height: 1;
+  margin-top: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/eri\/_source\/scss\/orion\/styles\/_typeplate\.scss}line{font-family:\00003582}}
+.tera {
+  font-size: 117px;
+  font-size: 7.3125rem;
+  margin-bottom: 0.22564rem;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/eri\/_source\/scss\/orion\/styles\/_typeplate\.scss}line{font-family:\00003582}}
+.giga {
+  font-size: 90px;
+  font-size: 5.625rem;
+  margin-bottom: 0.29333rem;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/eri\/_source\/scss\/orion\/styles\/_typeplate\.scss}line{font-family:\00003582}}
+.mega {
+  font-size: 72px;
+  font-size: 4.5rem;
+  margin-bottom: 0.36667rem;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/eri\/_source\/scss\/orion\/styles\/_typeplate\.scss}line{font-family:\00003582}}
+.alpha, h1 {
+  font-size: 60px;
+  font-size: 3.75rem;
+  margin-bottom: 0.44rem;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/eri\/_source\/scss\/orion\/styles\/_typeplate\.scss}line{font-family:\00003582}}
+.beta, h2 {
+  font-size: 48px;
+  font-size: 3rem;
+  margin-bottom: 0.55rem;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/eri\/_source\/scss\/orion\/styles\/_typeplate\.scss}line{font-family:\00003582}}
+.gamma, h3 {
+  font-size: 36px;
+  font-size: 2.25rem;
+  margin-bottom: 0.73333rem;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/eri\/_source\/scss\/orion\/styles\/_typeplate\.scss}line{font-family:\00003582}}
+.delta, h4 {
+  font-size: 24px;
+  font-size: 1.5rem;
+  margin-bottom: 1.1rem;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/eri\/_source\/scss\/orion\/styles\/_typeplate\.scss}line{font-family:\00003582}}
+.epsilon, h5 {
+  font-size: 21px;
+  font-size: 1.3125rem;
+  margin-bottom: 1.25714rem;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/eri\/_source\/scss\/orion\/styles\/_typeplate\.scss}line{font-family:\00003582}}
+.zeta, h6 {
+  font-size: 18px;
+  font-size: 1.125rem;
+  margin-bottom: 1.46667rem;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/eri\/_source\/scss\/orion\/styles\/_typeplate\.scss}line{font-family:\00003622}}
+p {
+  margin: auto auto 1.5em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/eri\/_source\/scss\/orion\/styles\/_typeplate\.scss}line{font-family:\00003624}}
+p + p {
+  text-indent: 1.5em;
+  margin-top: -1.5em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/eri\/_source\/scss\/orion\/styles\/_typeplate\.scss}line{font-family:\00003648}}
+abbr,
+acronym,
+blockquote,
+code,
+dir,
+kbd,
+listing,
+plaintext,
+q,
+samp,
+tt,
+var,
+xmp {
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  -o-hyphens: none;
+  hyphens: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/eri\/_source\/scss\/orion\/styles\/_typeplate\.scss}line{font-family:\00003656}}
+pre code {
+  white-space: -moz-pre-wrap;
+  white-space: pre-wrap;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/eri\/_source\/scss\/orion\/styles\/_typeplate\.scss}line{font-family:\00003661}}
+pre {
+  white-space: pre;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/eri\/_source\/scss\/orion\/styles\/_typeplate\.scss}line{font-family:\00003665}}
+code {
+  white-space: pre;
+  font-family: monospace;
+}
+
+/**
+ * Abbreviations Markup
+ *
+	<abbr title="hyper text markup language">HMTL</abbr>
+ *
+ * Extend this object into your markup.
+ *
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/eri\/_source\/scss\/orion\/styles\/_typeplate\.scss}line{font-family:\00003681}}
+abbr {
+  font-variant: small-caps;
+  font-weight: 600;
+  text-transform: lowercase;
+  color: gray;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/eri\/_source\/scss\/orion\/styles\/_typeplate\.scss}line{font-family:\00003683}}
+abbr:hover {
+  cursor: help;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/eri\/_source\/scss\/orion\/styles\/_typeplate\.scss}line{font-family:\00003697}}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #222222;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/eri\/_source\/scss\/orion\/styles\/_typeplate\.scss}line{font-family:\00003707}}
+p + .drop-cap {
+  text-indent: 0;
+  margin-top: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/eri\/_source\/scss\/orion\/styles\/_typeplate\.scss}line{font-family:\00003431}}
+.drop-cap:first-letter {
+  float: left;
+  margin: inherit;
+  padding: inherit;
+  font-size: 4em;
+  font-family: inherit;
+  line-height: 1;
+  text-indent: 0;
+  background: transparent;
+  color: inherit;
+}
+
+/**
+ * Lining Definition Style Markup
+ *
+	<dl class="lining">
+		<dt><b></b></dt>
+		<dd></dd>
+	</dl>
+ *
+ * Extend this object into your markup.
+ *
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/eri\/_source\/scss\/orion\/styles\/_typeplate\.scss}line{font-family:\00003470}}
+.lining dt,
+.lining dd {
+  display: inline;
+  margin: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/eri\/_source\/scss\/orion\/styles\/_typeplate\.scss}line{font-family:\00003477}}
+.lining dt + dt:before,
+.lining dd + dt:before {
+  content: "\A";
+  white-space: pre;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/eri\/_source\/scss\/orion\/styles\/_typeplate\.scss}line{font-family:\00003485}}
+.lining dd + dd:before {
+  content: ", ";
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/eri\/_source\/scss\/orion\/styles\/_typeplate\.scss}line{font-family:\00003489}}
+.lining dd:before {
+  content: ": ";
+  margin-left: -0.2rem;
+}
+
+/**
+ * Dictionary Definition Style Markup
+ *
+	<dl class="dictionary-style">
+		<dt><b></b></dt>
+			<dd></dd>
+	</dl>
+ *
+ * Extend this object into your markup.
+ *
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/eri\/_source\/scss\/orion\/styles\/_typeplate\.scss}line{font-family:\00003497}}
+.dictionary-style dt {
+  display: inline;
+  counter-reset: definitions;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/eri\/_source\/scss\/orion\/styles\/_typeplate\.scss}line{font-family:\00003501}}
+.dictionary-style dt + dt:before {
+  content: ", ";
+  margin-left: -0.2rem;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/eri\/_source\/scss\/orion\/styles\/_typeplate\.scss}line{font-family:\00003507}}
+.dictionary-style dd {
+  display: block;
+  counter-increment: definitions;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/eri\/_source\/scss\/orion\/styles\/_typeplate\.scss}line{font-family:\00003510}}
+.dictionary-style dd:before {
+  content: counter(definitions,decimal) ". ";
+}
+
+/**
+ * Blockquote Markup
+ *
+		<figure>
+			<blockquote cite="">
+				<p></p>
+			</blockquote>
+			<figcaption>
+				<cite>
+					<small><a href=""></a></small>
+				</cite>
+			</figcaption>
+		</figure>
+ *
+ * Extend this object into your markup.
+ *
+ */
+/**
+ * Pull Quotes Markup
+ *
+	<aside class="pull-quote">
+		<blockquote>
+			<p></p>
+		</blockquote>
+	</aside>
+ *
+ * Extend this object into your custom stylesheet.
+ *
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/eri\/_source\/scss\/orion\/styles\/_typeplate\.scss}line{font-family:\00003791}}
+.pull-quote {
+  position: relative;
+  padding: 1em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/eri\/_source\/scss\/orion\/styles\/_typeplate\.scss}line{font-family:\00003372}}
+.pull-quote:before, .pull-quote:after {
+  height: 1em;
+  opacity: 0.5;
+  position: absolute;
+  font-size: 4em;
+  color: #dc976e;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/eri\/_source\/scss\/orion\/styles\/_typeplate\.scss}line{font-family:\00003379}}
+.pull-quote:before {
+  content: '“';
+  top: 0;
+  left: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/eri\/_source\/scss\/orion\/styles\/_typeplate\.scss}line{font-family:\00003384}}
+.pull-quote:after {
+  content: '”';
+  bottom: 0;
+  right: 0;
+}
+
+/**
+ * Figures Markup
+ *
+	<figure>
+		<figcaption>
+			<strong>Fig. 4.2 | </strong>Type Anatomy, an excerpt from Mark Boulton's book<cite title="http://designingfortheweb.co.uk/book/part3/part3_chapter11.php">"Designing for the Web"</cite>
+		</figcaption>
+	</figure>
+ *
+ * Extend this object into your markup.
+ *
+ */
+/**
+ * Footnote Markup : Replace 'X' with your unique number for each footnote
+ *
+	<article>
+		<p><sup><a href="#fn-itemX" id="fn-returnX"></a></sup></p>
+		<footer>
+			<ol class="foot-notes">
+				<li id="fn-itemX"><a href="#fn-returnX">↩</a></li>
+			</ol>
+		</footer>
+	</article>
+ *
+ * Extend this object into your markup.
+ *
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/eri\/_source\/scss\/partials\/global\/_base\.scss}line{font-family:\000031}}
+body {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/eri\/_source\/scss\/partials\/global\/_base\.scss}line{font-family:\000036}}
+.cc {
+  max-width: 1000px;
+  padding: 0 32;
+  padding: 0 2rem;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/eri\/_source\/scss\/partials\/global\/_base\.scss}line{font-family:\0000311}}
+div, header {
+  margin: 0 auto;
+  overflow: auto;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/eri\/_source\/scss\/partials\/global\/_base\.scss}line{font-family:\0000316}}
+.messages {
+  border: 2px solid;
+  padding: 1em 1em 1em 3em;
+  border-radius: .25em;
+  box-shadow: 2px 2px 1px 0 rgba(0, 0, 0, 0.25);
+  margin: 1em 0;
+  border-radius: .5em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/eri\/_source\/scss\/orion\/mixins\/_ost-drupalqf\.scss}line{font-family:\00003146}}
+.messages.status {
+  color: #2e702f;
+  border-color: #2e702f;
+  background: white url("../images/ok.png") 10px 0.75em no-repeat;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/eri\/_source\/scss\/orion\/mixins\/_ost-drupalqf\.scss}line{font-family:\00003151}}
+.messages.warning {
+  color: #654917;
+  border-color: #654917;
+  background: #faf3e7 url("../images/warning.png") 10px 0.75em no-repeat;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/eri\/_source\/scss\/orion\/mixins\/_ost-drupalqf\.scss}line{font-family:\00003156}}
+.messages.error {
+  color: #641b1d;
+  border-color: #641b1d;
+  background: white url("../images/error.png") 10px 0.75em no-repeat;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/eri\/_source\/scss\/partials\/global\/_forms\.scss}line{font-family:\000031}}
+.form-text, .form-type-textarea {
+  max-width: 400px;
+  min-width: 100px;
+  width: 80%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/eri\/_source\/scss\/partials\/global\/_forms\.scss}line{font-family:\000037}}
+.form-item {
+  margin-bottom: 16;
+  margin-bottom: 1rem;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/eri\/_source\/scss\/partials\/global\/_forms\.scss}line{font-family:\0000311}}
+.form-required {
+  color: #b43134;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/eri\/_source\/scss\/partials\/global\/_forms\.scss}line{font-family:\0000315}}
+.form-submit {
+  border: 1px solid #255300;
+  border-bottom: 1px solid #1c4300;
+  border-radius: 5px;
+  box-shadow: inset 0 1px 0 0 #bfdf1e;
+  color: white;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #9ac212;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #9ac212), color-stop(50%, #629000), color-stop(50%, #447700), color-stop(100%, #4b7c00));
+  background-image: -webkit-linear-gradient(top, #9ac212 0%, #629000 50%, #447700 50%, #4b7c00 100%);
+  background-image: linear-gradient(to bottom,#9ac212 0%, #629000 50%, #447700 50%, #4b7c00 100%);
+  padding: 8px 20px;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 0 -1px 1px #0e3500;
+  text-transform: uppercase;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/CodeKit\.app\/Contents\/Resources\/engines\/bourbon\/bourbon\/app\/assets\/stylesheets\/addons\/_button\.scss}line{font-family:\00003151}}
+.form-submit:hover:not(:disabled) {
+  cursor: pointer;
+  background-color: #8db300;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #8db300), color-stop(50%, #588400), color-stop(50%, #3d6d00), color-stop(100%, #447200));
+  background-image: -webkit-linear-gradient(top, #8db300 0%, #588400 50%, #3d6d00 50%, #447200 100%);
+  background-image: linear-gradient(to bottom,#8db300 0%, #588400 50%, #3d6d00 50%, #447200 100%);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/CodeKit\.app\/Contents\/Resources\/engines\/bourbon\/bourbon\/app\/assets\/stylesheets\/addons\/_button\.scss}line{font-family:\00003171}}
+.form-submit:active:not(:disabled) {
+  box-shadow: inset 0 0 20px 0 #2b4e00, 0 1px 0 white;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/CodeKit\.app\/Contents\/Resources\/engines\/bourbon\/bourbon\/app\/assets\/stylesheets\/addons\/_button\.scss}line{font-family:\0000338}}
+.form-submit:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/eri\/_source\/scss\/partials\/global\/_forms\.scss}line{font-family:\0000321}}
+.form-type-select > label, .form-type-textfield > label, .form-type-textarea > label, .form-type-checkboxes > label, .form-type-radios > label {
+  font-weight: bold;
+  min-width: 200px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/eri\/_source\/scss\/partials\/global\/_forms\.scss}line{font-family:\0000327}}
+.form-text {
+  border: 1px solid #ccc;
+  padding: .25em;
+  border-radius: .25em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/eri\/_source\/scss\/partials\/global\/_forms\.scss}line{font-family:\0000335}}
+.form-type-textarea {
+  margin: 0 0 16 0;
+  margin: 0 0 1rem 0;
+  max-width: 608;
+  max-width: 38rem;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/eri\/_source\/scss\/partials\/global\/_forms\.scss}line{font-family:\0000342}}
+.form-textarea {
+  border: 1px solid #ccc;
+  border-radius: 0 .25em 0 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/eri\/_source\/scss\/partials\/components\/_header\.scss}line{font-family:\000031}}
+header#site-header {
+  background: transparent url("../images/mast-default.jpg") 50% 0 no-repeat;
+  color: white;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.25);
+  margin-bottom: 32;
+  margin-bottom: 2rem;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/eri\/_source\/scss\/partials\/components\/_header\.scss}line{font-family:\000037}}
+header#site-header h1 {
+  color: white;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  margin-bottom: .5em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/eri\/_source\/scss\/partials\/components\/_header\.scss}line{font-family:\0000314}}
+#main-menu-wrapper {
+  background-color: rgba(0, 0, 0, 0.25);
+  border-radius: 0 0 .5em .5em;
+  padding: .5em 1em;
+  margin-bottom: 32;
+  margin-bottom: 2rem;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/eri\/_source\/scss\/partials\/components\/_header\.scss}line{font-family:\0000321}}
+nav#main-menu {
+  text-align: center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/eri\/_source\/scss\/partials\/components\/_header\.scss}line{font-family:\0000324}}
+nav#main-menu ul.menu {
+  margin: 0;
+  padding: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/eri\/_source\/scss\/orion\/mixins\/_ost-structure\.scss}line{font-family:\000038}}
+nav#main-menu ul.menu li {
+  display: inline-block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/eri\/_source\/scss\/orion\/mixins\/_ost-structure\.scss}line{font-family:\0000311}}
+nav#main-menu ul.menu li a {
+  display: inline-block;
+  padding: 0 1em 0 1em;
+  margin-right: -5px;
+  border-right: 1px solid white;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/eri\/_source\/scss\/orion\/mixins\/_ost-structure\.scss}line{font-family:\0000318}}
+nav#main-menu ul.menu li.last a {
+  border-right: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/eri\/_source\/scss\/partials\/components\/_header\.scss}line{font-family:\0000331}}
+nav#main-menu ul.menu li a {
+  color: white;
+  text-decoration: none;
+  line-height: 16;
+  line-height: 1rem;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/eri\/_source\/scss\/partials\/components\/_header\.scss}line{font-family:\0000336}}
+nav#main-menu ul.menu li a:visited {
+  color: white;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/eri\/_source\/scss\/partials\/components\/_header\.scss}line{font-family:\0000337}}
+nav#main-menu ul.menu li a:hover, nav#main-menu ul.menu li a:active, nav#main-menu ul.menu li a.active {
+  color: #ccc;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/eri\/_source\/scss\/partials\/components\/_header\.scss}line{font-family:\0000343}}
+#header-bar {
+  box-shadow: 0 -1px 4px -1px #333333;
+  height: 6px;
+  position: relative;
+  z-index: 10;
+  background-color: #E7E7E7;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/eri\/_source\/scss\/partials\/components\/_footer\.scss}line{font-family:\000031}}
+footer#site-footer {
+  background: #2e1c10 url("../images/dirt.jpg") 50% 0 no-repeat;
+  color: white;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/eri\/_source\/scss\/partials\/components\/_footer\.scss}line{font-family:\000035}}
+footer#site-footer .cc {
+  padding: 1em 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/eri\/_source\/scss\/partials\/components\/_footer\.scss}line{font-family:\0000310}}
+#footer-bar {
+  box-shadow: 0 0 6px #111;
+  height: 6px;
+  position: relative;
+  z-index: 10;
+  background-color: #2e1c10;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/eri\/_source\/scss\/partials\/components\/_contact-form\.scss}line{font-family:\000033}}
+form.contact-form .form-type-textfield label {
+  display: inline-block;
+  width: 20%;
+  vertical-align: top;
+}

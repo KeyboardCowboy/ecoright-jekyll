@@ -1,0 +1,14 @@
+body {
+  font-family: $helvetica;
+}
+
+// Content container
+.cc {
+  max-width: 1000px;
+  @include x-rem(padding, 0 2);
+}
+
+div, header {
+  margin: 0 auto;
+  overflow: auto;
+}

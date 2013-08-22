@@ -1,0 +1,16 @@
+footer#site-footer {
+  background: $dirt url('../images/dirt.jpg') 50% 0 no-repeat;
+  color: white;
+
+  .cc {
+    padding: 1em 0;
+  }
+}
+
+#footer-bar {
+  box-shadow: 0 0 6px #111;
+  height: 6px;
+  position: relative;
+  z-index: 10;
+  background-color: $dirt;
+}

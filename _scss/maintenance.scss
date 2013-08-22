@@ -1,0 +1,69 @@
+@import 'bourbon';
+@import 'orion/mixins';
+@import 'orion/placeholders';
+@import 'orion/styles';
+
+$dark-green: #254f20;
+$light-green: lighten(#254f20, 10%);
+
+body {
+  font-family: $lucida-grande;
+  text-align: center;
+  margin-top: 10%;
+  text-shadow: 2px 2px 1px rgba(0,0,0,.5);
+  color: white;
+
+  @include css-hyphens(none);
+}
+
+* {
+  margin: 0;
+}
+
+header {
+  padding: 2em 3rem;
+
+  h1 {
+    color: white;
+  }
+}
+
+section {
+  padding: 2em 3rem;
+
+  h3 {
+    color: white;
+    line-height: 1.4em;
+  }
+}
+
+footer {
+  padding: 1em 3rem;
+  font-size: .8em;
+}
+
+a {
+  color: white;
+
+  &:visited, &:hover, &:active {
+    color: white;
+  }
+}
+
+@media(max-width: 550px) {
+  html {
+    font-size: 85%;
+  }
+
+  header h1 {
+    @include type-scale(40, $font-base, '#{$type-scale-unit-value}', $measure);
+  }
+
+  section h3 {
+    @include type-scale(25, $font-base, '#{$type-scale-unit-value}', $measure);
+  }
+
+  footer {
+    font-size: 1.0em;
+  }
+}

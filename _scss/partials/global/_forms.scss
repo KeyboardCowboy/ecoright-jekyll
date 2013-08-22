@@ -1,0 +1,45 @@
+%responsive-width {
+  max-width: 400px;
+  min-width: 100px;
+  width: 80%;
+}
+
+.form-item {
+  @include x-rem(margin-bottom, 1);
+}
+
+.form-required {
+  color: lighten($error, 20%);
+}
+
+.form-submit {
+  @include button(shiny, $green-lite);
+  text-transform: uppercase;
+}
+
+.form-type-select, .form-type-textfield, .form-type-textarea, .form-type-checkboxes, .form-type-radios {
+  > label {
+    font-weight: bold;
+    min-width: 200px;
+  }
+}
+
+.form-text {
+  border: 1px solid #ccc;
+  padding: .25em;
+  border-radius: .25em;
+
+  @extend %responsive-width;
+}
+
+.form-type-textarea {
+  @extend %responsive-width;
+  @include x-rem(margin, 0 0 1 0);
+
+  @include x-rem(max-width, 38);
+}
+
+.form-textarea {
+  border: 1px solid #ccc;
+  border-radius: 0 .25em 0 0;
+}
