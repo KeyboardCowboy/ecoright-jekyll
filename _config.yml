@@ -2,3 +2,6 @@ name: EcoRight International, Inc.
 markdown: redcarpet
 pygments: true
 exclude: ['publish']
+
+ga_property: UA-27310036-2
+ga_domain: ecorightinternational.com
