@@ -1,0 +1,1 @@
+curl `echo $ERI_STAGE`

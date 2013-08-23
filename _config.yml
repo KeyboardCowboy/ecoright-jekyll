@@ -1,3 +1,4 @@
 name: EcoRight International, Inc.
 markdown: redcarpet
 pygments: true
+exclude: ['publish']
