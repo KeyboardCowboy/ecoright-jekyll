@@ -1,1 +1,1 @@
-curl http://204.62.14.91:8080/job/EcoRight%20Staging%20Deployment/build?token=cXqSbi1uf23f36r8PjqmXMpBuP/tHU8RrTBftlmHgac=
+curl `echo $ERI_STAGE`
