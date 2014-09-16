@@ -1,4 +1,4 @@
 _site
 _source
 codekit-config.json
-publish
+.DS_Store

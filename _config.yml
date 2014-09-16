@@ -1,3 +1,7 @@
 name: Bio Renewable Solutions Inc
 markdown: redcarpet
 highlighter: pygments
+exclude: ['publish']
+
+ga_property: UA-27310036-2
+ga_domain: biorenewablesolutions.com
