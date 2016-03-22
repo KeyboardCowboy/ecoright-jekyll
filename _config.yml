@@ -1,7 +1,15 @@
 name: Bio Renewable Solutions Inc
-markdown: redcarpet
-highlighter: pygments
 exclude: ['publish']
 
 ga_property: UA-27310036-2
 ga_domain: biorenewablesolutions.com
+
+url: "http://162unlimited.com"
+baseurl: ""
+permalink: pretty
+
+# Build settings
+markdown: kramdown
+
+# Files
+exclude: ['Gemfile', 'Gemfile.lock', 'package.json', 'Gruntfile.js', 'node_modules']
